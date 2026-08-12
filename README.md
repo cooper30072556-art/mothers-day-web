@@ -1,8 +1,1 @@
-[script.js](https://github.com/user-attachments/files/30973887/script.js)
-const openLetter=document.getElementById("openLetter"),closeLetter=document.getElementById("closeLetter"),modal=document.getElementById("letterModal"),backdrop=document.querySelector(".modal-backdrop"),heartBtn=document.getElementById("heartBtn"),heartMessage=document.getElementById("heartMessage");
-function showModal(){modal.classList.add("open");modal.setAttribute("aria-hidden","false")}
-function hideModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
-openLetter.addEventListener("click",showModal);closeLetter.addEventListener("click",hideModal);backdrop.addEventListener("click",hideModal);
-document.addEventListener("keydown",e=>{if(e.key==="Escape")hideModal()});
-heartBtn.addEventListener("click",()=>{heartMessage.classList.add("show");heartBtn.textContent="💗 ส่งหัวใจสำเร็จแล้ว";for(let i=0;i<18;i++){const el=document.createElement("span");el.textContent=["💗","💕","💖","🌸","♡"][Math.floor(Math.random()*5)];Object.assign(el.style,{position:"fixed",left:`${45+Math.random()*10}%`,top:`${55+Math.random()*10}%`,zIndex:100,fontSize:`${16+Math.random()*18}px`,pointerEvents:"none"});document.body.appendChild(el);const x=(Math.random()-.5)*500,y=-100-Math.random()*350;el.animate([{transform:"translate(0,0) scale(.5)",opacity:1},{transform:`translate(${x}px,${y}px) scale(1.2)`,opacity:0}],{duration:1100+Math.random()*600,easing:"cubic-bezier(.2,.8,.2,1)"}).onfinish=()=>el.remove()}});
-const petals=document.querySelector(".petals");for(let i=0;i<24;i++){const p=document.createElement("span");p.className="petal";p.textContent=["🌸","🌼","✿","♡"][Math.floor(Math.random()*4)];p.style.left=`${Math.random()*100}%`;p.style.animationDuration=`${7+Math.random()*9}s`;p.style.animationDelay=`${Math.random()*8}s`;p.style.fontSize=`${12+Math.random()*12}px`;petals.appendChild(p)}
+
